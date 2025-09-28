@@ -1,0 +1,114 @@
+
+
+@font-face {
+    font-family: myfont;
+   src: url(./CodeSaver-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.mainDiv{
+    background: #31025d;
+    color: rgb(255, 255, 255);
+    height: 36vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+h1{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+h2{
+   text-transform: uppercase;
+}
+p i{
+    font-family: 'Rubik', sans-serif;
+}
+.mainHead{
+ text-align: center;
+}
+
+.secondPart{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+
+}
+
+.boxes{
+    background: #dcfcf3;
+    width: 70vw;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 36px 12px 30px 12px;
+}
+
+ul{
+  list-style: none;
+  width: 70%;
+  
+
+}
+li{
+    background: #fffcf1;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 2px;
+    
+}
+
+
+footer{
+    background: #31023a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    bottom: 0;
+}
+
+#b1{
+ background: #ccf9f9;
+}
+
+#b2{
+ background: #ffffb1;
+}
+
+#b5{
+ background: #f9deec;
+}
+
+#b3{
+ background: #d3fee7;
+}
+
+#b4{
+ background: #e6e5ff;
+}
+
+#b2 ul li{
+    font-weight:600;
+}
+#b3 ul li {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#b4 ul li {
+    font-style: italic;
+}
