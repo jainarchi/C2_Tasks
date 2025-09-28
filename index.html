@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <img id="bg-img" src="https://images.pexels.com/photos/7793923/pexels-photo-7793923.jpeg" alt="">
+
+    <div>
+      <h1>Job Application Form</h1>
+      <form id="form">
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+          required
+        />
+        <br />
+        <label for="middleName">Middle Name:</label>
+        <input
+          type="text"
+          id="middleName"
+          name="middleName"
+          placeholder="Middle Name"
+        />
+        <br />
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Last Name"
+          required
+        />
+
+        <br />
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <label for="contact">Contact No. :</label>
+        <input pattern="[0-9]{10}" type="tel" id="contact" placeholder="Contact No." required />
+        <br />
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" required />
+        <br />
+        <!--req for name , here is the same name so we can add req in any of them -->
+        <label>Gender: </label>
+        <label class="genOption"><input type="radio" name="gender" value="male" required />Male</label>
+        <label class="genOption"><input type="radio" name="gender" value="female" /> Female</label>
+        <label class="genOption"><input type="radio" name="gender" value="other" /> Other</label>
+
+        <label for="cgpa">CGPA:</label>
+        <input
+          type="number"
+          id="cgpa"
+          name="cgpa"
+          step="0.01"
+          min="0"
+          max="10"
+          placeholder="e.g. 8.5"
+          required
+        />
+
+        <!-- when click on label brower automatically foucs on select having id   -->
+        <label for="position">Position Applying For:</label>
+
+        <select id="position" required>
+          <option value="" disabled>Select a position</option>
+          <option value="software_engineer">Software Engineer</option>
+          <option value="data_analyst">Data Analyst</option>
+          <option value="project_manager">Project Manager</option>
+          <option value="graphic_designer">Graphic Designer</option>
+          <option value="marketing_specialist">Marketing Specialist</option>
+          <option value="sales_executive">Sales Executive</option>
+          <option value="customer_support">Customer Support</option>
+          <option value="hr_manager">HR Manager</option>
+        </select>
+        <br />
+
+        <label>Upload Resume: </label><br />
+        <input id="resume" type="file" required />
+
+        <br />
+        <label for="coverLetter">Cover Letter: </label><br />
+        <textarea
+          name="coverLetter"
+          id="coverLetter"
+          placeholder="Write your cover Letter here ..."
+          rows="10"
+          cols="40"
+        ></textarea>
+
+        <br />
+
+        <div>
+          <input id="agree" type="checkbox" required />
+          <label for="agree">Agree to Terms and Conditions</label>
+        </div>
+
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
